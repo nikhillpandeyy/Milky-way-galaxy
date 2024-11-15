@@ -1,0 +1,161 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+/* Basic styles for the video background */
+    body,html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+  
+      .background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the video covers the whole screen */
+        z-index: -1; /* Sends the video to the background */
+      }
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+#structure, #major-stars, #fun-facts {
+    margin-top: 30px;
+}
+
+.star-card {
+    display: inline-block;
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin: 10px;
+    width: 150px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.star-card:hover {
+    transform: scale(1.1);
+}
+
+button {
+    background-color: #ff6600;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #cc5200;
+}
+
+#fact-display {
+    margin-top: 15px;
+    font-style: italic;
+}
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.update-bar {
+    background-color: transparent; 
+    display: flex;
+    justify-content: end; /* Aligns the button to the right */
+    padding: 5px 15px;
+    z-index: 1;
+}
+/* more button */
+
+.update-dropdown {
+    position: fixed;
+    top: 90px;
+    right:10px;
+
+    background-color: transparent;
+
+    padding: 10px;
+    margin-top: 10px;
+    width: 200px;
+    position: fixed;
+    z-index: 10;
+}
+
+.update-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.update-dropdown li {
+    margin: 5px 0;
+}
+
+.update-dropdown a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #444;
+    transition: background-color 0.3s;
+}
+
+.update-dropdown a:hover {
+    background-color: #555;
+}
+.update-button {
+    background-color: #555;
+    border-radius: 5px;
+
+}
+#starshover:hover{
+    background-color: red;
+}
+
+

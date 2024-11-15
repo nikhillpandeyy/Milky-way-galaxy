@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring the Milky Way</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Exploring the Milky Way Galaxy</h1>
+        <p>Discover the wonders of our galaxy and learn about its major stars!</p>
+        <div class="update-bar">
+            <button class="update-button" onclick="toggleDropdown()"><b>...</b></button>
+        </div>
+        <div id="update-dropdown" class="update-dropdown" style="display: none;">
+            <ul>
+                <li><a href="https://imagine.gsfc.nasa.gov/hst_bday/" target="">what hubble saw on your bday</a></li>
+                <li><a href="https://www.nasa.gov/" style="color: white;" target="">NASA new space missions</a></li>
+                <li><a href="https://www.isro.gov.in/FutureMissions.html" target="">ISRO upcomming missions</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Background video -->
+    <video class="background-video" autoplay loop muted>
+        <source src="images/galaxy2.mp4" type="video/mp4">
+      </video>
+  
+
+    <!-- Structure Section -->
+    <section id="structure">
+        <h2>Galaxy Structure</h2>
+        <p>The Milky Way has a core, spiral arms, and a halo. It’s an incredible spiral galaxy with billions of stars!</p>
+        <div class="galaxy-image">
+            <!-- Add an illustration or image of the Milky Way Galaxy here -->
+            <p>The Milky Way galaxy is a vast, awe-inspiring cosmic city that stretches across the night sky, a marvel of creation composed of countless stars. It is a barred spiral galaxy, shaped like a grand, whirling pinwheel, with arms radiating from its center. Our home, the Solar System, resides in a relatively quiet neighborhood within one of these arms. This core, shrouded in mystery and brilliance, houses Sagittarius A*, a supermassive black hole whose gravitational might keeps the galaxy bound together.
+
+                The Milky Way is alive with star birth and death, creating a cosmic dance where colossal clouds of gas coalesce to ignite as newborn stars while others meet their spectacular end in brilliant supernovae. Among its countless stellar treasures are globular clusters, brilliant star-forming regions, and planetary systems that may resemble our own. Our galaxy sails through the cosmos, carrying secrets of past collisions and the promise of future ones, most notably its slow-motion rendezvous with the Andromeda Galaxy. Together, they will one day form a new galactic giant, a testament to the ever-evolving grandeur of the universe.</p>
+        </div>
+    </section>
+
+<!-- Major Stars Section -->
+<section id="major-stars">
+    <h2>Major Stars</h2>
+    <div class="star-card" onclick="showStarDetails('Betelgeuse')">
+        <h3><a href="images/Betelgeuse.webp" style="color: wheat;" id="starshover">Betelgeuse</a></h3>
+        <p>Type: Red Supergiant</p>
+    </div>
+    <div class="star-card" onclick="showStarDetails('Sirius')">
+        <h3><a href="images/syrus.webp" style="color: wheat;" id="starshover">Sirius</a></h3>
+        <p>Type: Brightest Star</p>
+    </div>
+    <div class="star-card" onclick="showStarDetails('Rigel')">
+        <h3><a href="images/rigal.webp" style="color: wheat" id="starshover">Rigel</a></h3>
+        <p>Type: Blue Supergiant</p>
+    </div>
+    <div class="star-card" onclick="showStarDetails('Polaris')">
+        <h3><a href="images/Polaris1.jpg" style="color: wheat;"id="starshover">Polaris</a></h3>
+        <p>Type: Yellow Supergiant</p>
+    </div>
+    <div class="star-card" onclick="showStarDetails('Alpha Centauri')">
+        <h3><a href="images/alphacenturi.jpg" style="color: wheat;" id="starshover">Alpha Centauri</a></h3>
+        <p>Type: Closest Star System</p>
+    </div>
+</section>
+
+
+<section>
+    <p style="font-size: large;">Click on <a href="all planets.html"><strong style="color:rgb(241, 18, 18)" >solarsystem </strong> </a> to know about all planets </p>
+</section>
+    <!-- Fun Facts Section -->
+    <section id="fun-facts">
+        <h2>Fun Facts</h2>
+        <button onclick="showRandomFact()">Did You Know?</button>
+        <p id="fact-display"></p>
+    </section>
+    <!-- Star Details Modal -->
+<div id="star-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3 id="star-name"></h3>
+        <p><strong>Type:</strong> <span id="star-type"></span></p>
+        <p><strong>Location:</strong> <span id="star-location"></span></p>
+        <p id="star-fact"></p>
+    </div>
+</div>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Learn more about our galaxy and the wonders of space!</p>
+        <p>have a look on our solarsystem; have a look on the night sky view from delhi
+         <p><a href="images/solarsystem video.mp4"  style="color: white;">click here for seeing our solar system</a>   <a href="images/sky view.png" style="color: white;"><strong>click here to see Constellation</strong></a></p>                                                                  </pre>                      
+        </p>
+        
+    </footer>
+
+
+    
+</body>
+</html>
